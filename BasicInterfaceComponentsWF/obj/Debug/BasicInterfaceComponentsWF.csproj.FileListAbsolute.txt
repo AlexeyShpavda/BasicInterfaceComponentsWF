@@ -1,0 +1,10 @@
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\bin\Debug\BasicInterfaceComponentsWF.exe.config
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\bin\Debug\BasicInterfaceComponentsWF.exe
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\bin\Debug\BasicInterfaceComponentsWF.pdb
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.csprojResolveAssemblyReference.cache
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.Form1.resources
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.Properties.Resources.resources
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.csproj.GenerateResource.Cache
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.csproj.CoreCompileInputs.cache
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.exe
+E:\Programs\C#\BasicInterfaceComponentsWF\BasicInterfaceComponentsWF\obj\Debug\BasicInterfaceComponentsWF.pdb
