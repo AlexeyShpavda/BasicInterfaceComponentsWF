@@ -205,7 +205,6 @@
             this.Man.TabStop = true;
             this.Man.Text = "Мужской";
             this.Man.UseVisualStyleBackColor = true;
-            this.Man.CheckedChanged += new System.EventHandler(this.Man_CheckedChanged);
             // 
             // Woman
             // 
@@ -218,7 +217,6 @@
             this.Woman.TabStop = true;
             this.Woman.Text = "Женский";
             this.Woman.UseVisualStyleBackColor = true;
-            this.Woman.CheckedChanged += new System.EventHandler(this.Woman_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -252,7 +250,6 @@
             this.checkBox3.TabIndex = 12;
             this.checkBox3.Text = "A";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -264,7 +261,6 @@
             this.checkBox4.TabIndex = 13;
             this.checkBox4.Text = "B";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -276,7 +272,6 @@
             this.checkBox5.TabIndex = 14;
             this.checkBox5.Text = "C";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // textBox1
             // 
@@ -332,7 +327,6 @@
             this.checkBox6.Text = "D";
             this.checkBox6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // label1
             // 
@@ -794,7 +788,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(524, 619);
             this.Controls.Add(this.panel5);
@@ -835,7 +829,7 @@
             this.Name = "MainForm";
             this.Text = "Анкетные данные сотрудника";
             this.TransparencyKey = System.Drawing.Color.Black;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.Пол.ResumeLayout(false);
             this.Пол.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -18,11 +18,18 @@ namespace BasicInterfaceComponentsWF
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        // Делает форму красной при нажатии левой кнопки мыши и зеленой при нажатии на правую.
+        #region ChangeColourOfForm
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-
+            switch (e.Button)
+            {
+                case MouseButtons.Left: BackColor = Color.Red; break;
+                case MouseButtons.Right: BackColor = Color.Green; break;
+            }
         }
+        #endregion
+
         // Гетеры и сетеры.
         #region GetSet
         public string LastName { get => textBox1.Text; set => LastName = value; }
@@ -53,15 +60,6 @@ namespace BasicInterfaceComponentsWF
         private void radioButton5_CheckedChanged(object sender, EventArgs e) => experience = 5;
         #endregion
 
-        // Блок выбора пола.
-        #region Gender
-        public short gender;
-
-        private void Man_CheckedChanged(object sender, EventArgs e) => gender = 1;
-
-        private void Woman_CheckedChanged(object sender, EventArgs e) => gender = 2;
-        #endregion
-
         // Блок выбора занятости.
         #region Schedule
 
@@ -74,41 +72,6 @@ namespace BasicInterfaceComponentsWF
         private void radioButton10_CheckedChanged(object sender, EventArgs e) => schedule = 3;
 
         private void radioButton11_CheckedChanged(object sender, EventArgs e) => schedule = 4;
-        #endregion
-
-        // Блок водительских прав и автомобиля.
-        #region DriverLicense and Car
-        bool hasCar = false;
-        bool hasDriverLisence = false;
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e) => hasCar = true;
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e) => hasDriverLisence = true;
-
-        bool categoryA = false;
-        bool categoryB = false;
-        bool categoryC = false;
-        bool categoryD = false;
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            if(checkBox2.Checked==true) categoryA = true;
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked == true) categoryB = true;
-        }
-
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked == true) categoryC = true;
-        }
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked == true) categoryD = true;
-        }
         #endregion
 
         // Проверка на корректность ввода.
@@ -208,10 +171,9 @@ namespace BasicInterfaceComponentsWF
             {
                 if (lastNameVerification && firstNameVerification && PatronymicVerification && EmailAdressVerification && PhoneNumberVerification)
                 {
-                    File.AppendAllText("output.txt", "=================================");
                     File.AppendAllText("output.txt", "\r\n" + LastName + " " + FirstName + " " + Patronymic + "\r\n");
-                    if (gender == 1) File.AppendAllText("output.txt", "Пол - Мужской\r\n");
-                    if (gender == 2) File.AppendAllText("output.txt", "Пол - Женский\r\n");
+                    if (Man.Checked) File.AppendAllText("output.txt", "Пол - Мужской\r\n");
+                    if (Woman.Checked) File.AppendAllText("output.txt", "Пол - Женский\r\n");
                     File.AppendAllText("output.txt", "Дата рождения - " + Data + "\r\n");
                     File.AppendAllText("output.txt", "Домашний адрес - " + HomeAdress + "\r\n");
                     File.AppendAllText("output.txt", "Email адрес - " + EmailAdress + "\r\n");
@@ -233,6 +195,10 @@ namespace BasicInterfaceComponentsWF
                         case 3: File.AppendAllText("output.txt", lineTwo + "Работа на дому" + "\r\n"); break;
                         case 4: File.AppendAllText("output.txt", lineTwo + "Посменная работа" + "\r\n"); break;
                     }
+
+                    if (checkBox1.Checked) File.AppendAllText("output.txt", "Личный автомобиль - Есть\r\n");
+                    else File.AppendAllText("output.txt", "Личного автомобиля - Нету\r\n");
+
                     if (checkBox2.Checked)
                     {
                         File.AppendAllText("output.txt", "Водительское удостоверение - Есть ");
@@ -244,8 +210,8 @@ namespace BasicInterfaceComponentsWF
 
                     }
                     else File.AppendAllText("output.txt", "Водительское удостоверение - Нету\r\n");
-                    File.AppendAllText("output.txt", "ЗП от:" + MinSalary + " до:" + MaxSalary + "\r\n");
-                    File.AppendAllText("output.txt", "Краткое резюме:\r\n" + Summary + "\r\n");
+                    if (MinSalary != "0" && MaxSalary != "0") File.AppendAllText("output.txt", "ЗП от:" + MinSalary + " до:" + MaxSalary + "\r\n");
+                    if (richTextBox1.Text != String.Empty) File.AppendAllText("output.txt", "Краткое резюме:\r\n" + Summary + "\r\n");
                     File.AppendAllText("output.txt", "=================================\r\n");
 
                     MessageBox.Show("Сохранено!", "Сохранение!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -318,6 +284,7 @@ namespace BasicInterfaceComponentsWF
             comboBox1.BackColor = Color.White;
             comboBox2.BackColor = Color.White;
             comboBox3.BackColor = Color.White;
+            BackColor = Color.Silver;
         }
 
         private void button3_Click(object sender, EventArgs e)
