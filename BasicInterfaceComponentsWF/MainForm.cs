@@ -18,6 +18,7 @@ namespace BasicInterfaceComponentsWF
         {
             InitializeComponent();
         }
+
         // Делает форму красной при нажатии левой кнопки мыши и зеленой при нажатии на правую.
         #region ChangeColourOfForm
         private void Form1_MouseDown(object sender, MouseEventArgs e)
