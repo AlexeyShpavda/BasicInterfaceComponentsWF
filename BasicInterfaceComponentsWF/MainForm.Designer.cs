@@ -305,7 +305,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(348, 20);
             this.textBox4.TabIndex = 18;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -313,7 +312,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(306, 20);
             this.textBox5.TabIndex = 19;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // richTextBox1
             // 
@@ -688,21 +686,29 @@
             // 
             // numericUpDown2
             // 
+            this.numericUpDown2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDown2.Location = new System.Drawing.Point(186, 1);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(78, 20);
             this.numericUpDown2.TabIndex = 48;
-            this.numericUpDown2.Maximum = 5000;
-            this.numericUpDown2.Minimum = 0;
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numericUpDown1.Location = new System.Drawing.Point(32, 1);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(89, 20);
             this.numericUpDown1.TabIndex = 47;
-            this.numericUpDown1.Maximum = 5000;
-            this.numericUpDown1.Minimum = 0;
             // 
             // label19
             // 
@@ -738,11 +744,11 @@
             // radioButton11
             // 
             this.radioButton11.AutoSize = true;
+            this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton11.Location = new System.Drawing.Point(3, 53);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(121, 17);
             this.radioButton11.TabIndex = 3;
-            this.radioButton11.TabStop = true;
             this.radioButton11.Text = "Посменная работа";
             this.radioButton11.UseVisualStyleBackColor = true;
             this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
@@ -750,24 +756,23 @@
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
+            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton10.Location = new System.Drawing.Point(3, 36);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(104, 17);
             this.radioButton10.TabIndex = 2;
-            this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Работа на дому";
             this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.UseWaitCursor = true;
             this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
+            this.radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton9.Location = new System.Drawing.Point(3, 20);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(134, 17);
             this.radioButton9.TabIndex = 1;
-            this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Частичная занятость";
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
@@ -775,11 +780,11 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
+            this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton8.Location = new System.Drawing.Point(3, 3);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(118, 17);
             this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Полная занятость";
             this.radioButton8.UseVisualStyleBackColor = true;
             this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
@@ -909,8 +914,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton10;
     }
 }
 
