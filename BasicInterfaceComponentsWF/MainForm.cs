@@ -17,6 +17,18 @@ namespace BasicInterfaceComponentsWF
             InitializeComponent();
         }
 
+        public string LastName { get => textBox1.Text; set => LastName = value; }
+        public string FirstName { get => textBox2.Text; set => FirstName = value; }
+        public string Patronymic { get => textBox3.Text; set => Patronymic = value; }
+        public string Data { get => comboBox1.Text + " " + comboBox2.Text + " " + comboBox3.Text; set => Data = value; }
+        public string Adress { get => textBox4.Text; set => Adress = value; }
+        public string Email { get => textBox5.Text; set => Email = value; }
+        public string PhoneType { get => comboBox4.Text; set => PhoneType = value; }
+        public string PhoneNumber { get => textBox6.Text; set => PhoneNumber = value; }
+        public string MinSalary { get => numericUpDown1.Text; set => MinSalary = value; }
+        public string MaxSalary { get => numericUpDown2.Text; set => MaxSalary = value; }
+        public string Summary { get => richTextBox1.Text; set => Summary = value; }
+
         // Блок отвечающий за опыт работы.
         #region Experience
         public short experience;
@@ -95,10 +107,6 @@ namespace BasicInterfaceComponentsWF
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {

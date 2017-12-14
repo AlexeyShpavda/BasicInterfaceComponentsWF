@@ -287,14 +287,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 73);
+            this.textBox2.Location = new System.Drawing.Point(95, 46);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(232, 20);
             this.textBox2.TabIndex = 16;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(95, 47);
+            this.textBox3.Location = new System.Drawing.Point(95, 72);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(232, 20);
             this.textBox3.TabIndex = 17;
@@ -692,6 +692,8 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(78, 20);
             this.numericUpDown2.TabIndex = 48;
+            this.numericUpDown2.Maximum = 5000;
+            this.numericUpDown2.Minimum = 0;
             // 
             // numericUpDown1
             // 
@@ -699,6 +701,8 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(89, 20);
             this.numericUpDown1.TabIndex = 47;
+            this.numericUpDown1.Maximum = 5000;
+            this.numericUpDown1.Minimum = 0;
             // 
             // label19
             // 
