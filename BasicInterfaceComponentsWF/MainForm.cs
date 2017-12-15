@@ -225,8 +225,8 @@ namespace BasicInterfaceComponentsWF
                     if (!lastNameVerification) { lineThree += "- Фамилия\r\n"; textBox1.BackColor = Color.DarkRed; }
                     if (!firstNameVerification) { lineThree += "- Имя\r\n"; textBox2.BackColor = Color.DarkRed; }
                     if (!PatronymicVerification) { lineThree += "- Отчество\r\n"; textBox3.BackColor = Color.DarkRed; }
-                    if (!EmailAdressVerification) { lineThree += "- Номер телефона\r\n"; textBox5.BackColor = Color.DarkRed; }
-                    if (!PhoneNumberVerification) { lineThree += "- Адресс э. почты\r\n"; textBox6.BackColor = Color.DarkRed; }
+                    if (!EmailAdressVerification) { lineThree += "- Адресс э. почты\r\n"; textBox5.BackColor = Color.DarkRed; }
+                    if (!PhoneNumberVerification) { lineThree += "- Номер телефона\r\n"; textBox6.BackColor = Color.DarkRed; }
                     MessageBox.Show(lineThree, "Неверно заполнены поля!", MessageBoxButtons.OK);
                 }
             }
